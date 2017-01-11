@@ -29,10 +29,10 @@ public class BusTest{
 
   @Test
   public void hasTooManyPassengers(){
-    for(int i = 0; i < 25; i++){
+    for(int i = 0; i < 100; i++){
       bus.addPassenger(person);
     }
-    assertEquals( 10, bus.passengerCount() );
+    assertEquals( 75, bus.passengerCount() );
   }
 
 }
